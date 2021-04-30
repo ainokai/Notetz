@@ -21,7 +21,7 @@ body {
  } 
 
  .headerLogo h1{
-    color:black
+    color:black;
     display: table-cell;
     vertical-align: middle;
 
