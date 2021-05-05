@@ -64,6 +64,12 @@ $(document).ready(function(){
       $('notepad').css('background-color', color);
       $('#title-field').css('background-color', color);
       $('#body-field').css('background-color', color);
-    })
-  
-  })
+    });
+
+    $('#btn-saveChanges').click(function(){
+        alert ('All changes saved.');
+        return;
+      });
+
+
+ })
