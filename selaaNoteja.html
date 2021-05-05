@@ -1,21 +1,59 @@
 <!DOCTYPE html>
-<html lang="fi">
-<head>
+<html lang="en">
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muistiinpanot</title>
-</head>
-<body>
-
-    <h1>Selaa aiemmin luotuja muistiinpanoja</h1>  
-    <hr>
-    <label for="Muistiinpanot">Valitse muistiinpano:</label>
-    <select id="Notes" name="Note">
-        <option value="yksi">Yksi</option>
-        <option value="kaksi">Kaksi</option>
-        <option value="kolme">Kolme</option>
-    </select>
-    
-</body>
+    <title>NOTEZ</title>
+    <link rel='stylesheet' href='style.css'>
+  </head>
+  
+  <body>
+    <header>
+      NOTEZ
+    </header>
+    <main>
+        <h1>Explore saved notes</h1>  
+        <hr>
+        <p>Open and read previously saved notes. Start by choosing a category of notes </p>
+        <label for="Category">Category: </label>
+        <br>
+        <select id="Category" name="Note">
+            <option value="School">School</option>
+            <option value="Work">Work</option>
+            <option value="Other">Other</option>
+        </select>
+        
+      <div class="headers">
+        <div id="list-head">
+          <b>Previously saved notes</b> <i>(click to edit/delete)</i>
+        </div>
+        <div id="note-head">
+          <b>Notepad</b>
+          <span id="edit-mode" class="no-display">
+            <i> (edit mode) </i>
+          </span>
+        </div>
+      </div>
+      <noteList>
+        <div id='listed'>
+        </div>
+      </noteList>
+      <notepad>
+        <div id="note-title">
+          <input id="title-field" type="text" placeholder="Add note title">
+        </div>
+        <div id="note-body">
+          <textarea id="body-field"></textarea>
+        </div>
+      </notepad>
+    </main>
+    <footer>
+      <button id="btn-save">Save</button>
+      <button id="btn-delete">Delete / Clear </button>
+    </footer>
+  </body>
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+  <script type='text/javascript' src='app.js'></script>
 </html>
