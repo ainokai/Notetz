@@ -1,25 +1,60 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muistiinpanot</title>
+    <title>NOTEZ</title>
+    <link rel='stylesheet' href='style.css'>
 </head>
 
 <body>
+    <header>
+        NOTEZ
+    </header>
+    <main>
 
-    <h1>Luo uusi muistiinpano</h1>
-    <hr>
-    <h2>Kirjoita uusi muistiinpano alla näkyvään tekstikenttään: </h2>
-    <textarea name="message" rows="10" cols="30"></textarea>
-    <br>
-    <button type="button" onclick="alert('Note tallennettu')">Tallenna</button>
-    <hr>
-    <a href="index.html">Palaa alkuun</a>
+        <h1>Create a new note to Notez</h1>
+        <hr>
+        <p>Add a new note.<br>
+            Give the note a title and select a category. <br>
+            Remember to save the note! </p>
+        <br>
+
+        <form>
+            <notepad>
+                <div id="note-title">
+                    <input id="title-field" type="text" placeholder="Add note title">
+                </div>
+                <div id="category-title">
+                    <label for="Category">Category: </label>
+                    <select id="Category" name="Note">
+                        <option value=" - " selected> - </option>
+                        <option value="School">School</option>
+                        <option value="Work">Work</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div id="note-body">
+                    <textarea id="body-field"></textarea>
+                </div>
+            </notepad>
+
+            <br><br>
+
+        </form>
+        <footer>
+            <button id="btn-save" onclick="alert('Note saved')">Save</button>
+            <button id="btn-delete">Clear all </button>
+        </footer>
+
+    </main>
+    <a href="index.html">&#8592; Return to start</a>
 
 
 </body>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+<script type='text/javascript' src='app.js'></script>
 
 </html>
