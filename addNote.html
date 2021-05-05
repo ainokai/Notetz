@@ -1,84 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOTEZ</title>
-    <link rel='stylesheet' href='style.css'>
-  </head>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>NOTEZ</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOTEZ</title>
+  <link rel='stylesheet' href='style.css'>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-    <header>
-                   
-        <div class="headerLeft">
+  <header>
 
-        <button class="headerButton">
-            <a href="settings.html">Settings</a></button>
+    <div class="headerLeft">
 
-        <button class="headerButton">
-            <a href="index.html">Home</a></button>
+      <button class="headerButton">
+        <a href="settings.html"><i class="fa fa-gear"></i></a></button>
 
-        </div>
+      <button class="headerButton">
+        <a href="index.html"><i class="fa fa-home"></i></a></button>
 
-        <h1>Notetz</h1>
-        
-    </header>
+    </div>
 
-    <ul class="navbar">
-        <li class="dropdown">
-        <button class="dropbtn">File
-            <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-            <a href="uusiNote.html">New File</a>
-            <a href="#">Open File</a>
-            <a href="#">Save File</a>
-            <a href="#">Save File As...</a>
-            <a href="#">Delete File</a>
-            </div>
-        </li>
+    <h1>Notetz</h1>
 
-        <li class="dropdown">
-            <button class="dropbtn">Edit
-                <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                <a href="#">Find</a>
-                <a href="#">Undo</a>
-                <a href="#">Redo</a>                  
-                </div>
-            </li>
+  </header>
 
-            <li class="dropdown">
-                <button class="dropbtn">Help
-                    <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                    <a href="#">Guide</a>
-                    <a href="#">About Notez</a>
-                    </div>
-                </li>
-        
-    </ul>
-  
+  <ul class="navbar">
+    <li class="dropdown">
+      <button class="dropbtn">File
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="addNote.html">New File</a>
+        <a href="#">Open File</a>
+        <a href="#">Save File</a>
+        <a href="#">Save File As...</a>
+        <a href="#">Delete File</a>
+      </div>
+    </li>
+
+    <li class="dropdown">
+      <button class="dropbtn">Edit
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Find</a>
+        <a href="#">Undo</a>
+        <a href="#">Redo</a>
+      </div>
+    </li>
+
+    <li class="dropdown">
+      <button class="dropbtn">Help
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Guide</a>
+        <a href="#">About Notez</a>
+      </div>
+    </li>
+
+  </ul>
+
   <body>
     <main>
-        <div class="headers">
+      <div class="headers">
         <div id="list-head">
-          <b>Previously saved notes</b> <i>(click to edit/delete)</i>
+          <b>Previously saved notes</b><br><i>Click to edit/delete</i>
         </div>
         <div id="note-head">
-          <b>Notepad</b>
+          <b>Note editor</b><br><i>Change the color by clicking the colors</i>
           <span id="edit-mode" class="no-display">
             <i> (edit mode) </i>
           </span>
@@ -99,15 +94,10 @@
       <div id='color-select'>
         <div class='color-box white'></div>
         <div class='color-box orange'></div>
-        <div class='color-box banana'></div>
-        <div class='color-box honeydew'></div>
-        <div class='color-box flora'></div>
-        <div class='color-box aqua'></div>
-        <div class='color-box ice'></div>
-        <div class='color-box sky'></div>
-        <div class='color-box orchid'></div>
-        <div class='color-box lavendar'></div>
+        <div class='color-box yellow'></div>
         <div class='color-box pink'></div>
+        <div class='color-box blue'></div>
+        <div class='color-box green'></div>
       </div>
     </main>
     <footer>
@@ -115,10 +105,14 @@
       <button id="btn-delete">Delete / Clear </button>
     </footer>
   </body>
+  <footer>
+    <button class="footerButton">
+      <a href="index.html"><i class="fa fa-arrow-left"></i></a></button>
+  </footer>
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
   <script type='text/javascript' src='app.js'></script>
-</html>
 
+</html>
 
 
 
