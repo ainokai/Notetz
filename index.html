@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     
+    
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,17 +12,21 @@
 
     <body>
 
-        <div class="header">
-            <div class="headerLogo"> 
-                <h1>Notetz</h1>
-                <div class="headerLeft">
+        <header>
+                       
+            <div class="headerLeft">
 
+            <button class="headerButton">
+                <a href="#">Settings</a></button>
 
-                </div>
+            <button class="headerButton">
+                <a href="index.html">Home</a></button>
 
             </div>
+
+            <h1>Notetz</h1>
             
-        </div>
+        </header>
 
         <ul class="navbar">
             <li class="dropdown">
@@ -29,7 +34,7 @@
                 <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                <a href="#">New File</a>
+                <a href="uusiNote.html">New File</a>
                 <a href="#">Open File</a>
                 <a href="#">Save File</a>
                 <a href="#">Save File As...</a>
@@ -60,12 +65,11 @@
             
         </ul>
 
-        <ul class="notes">
-            <li><button class="note">
-                <a href="uusiNote.html">New note</a></button></li>
-            <li><button class="note">
-                <a href="selaaNoteja.html">Explore notes</a></button></li>
-        </ul>
+        <div class="notes">
+            <button class="note">
+                <a href="addNote.html">New note</a></button></li>
+            
+        </div>
     
     
     </body>
