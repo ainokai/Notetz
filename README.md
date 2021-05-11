@@ -1,4 +1,4 @@
-# Notez -app
+# Notetz -app
 
 Oulun Yliopisto, Ohjelmointi 4 -kurssityö
 
