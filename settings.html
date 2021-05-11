@@ -17,13 +17,10 @@
     <header>
 
         <div class="headerLeft">
-
             <button class="headerButton">
                 <a href="settings.html"><i class="fa fa-gear"></i></a></button>
-
             <button class="headerButton">
                 <a href="index.html"><i class="fa fa-home"></i></a></button>
-
         </div>
 
         <h1>Notetz</h1>
@@ -86,7 +83,9 @@
             </select>
             <br><br>
             <label for="savelocation">Save location: </label>
-            <input type="text" id="savelocation" name="savelocation"><br>
+            <input type="text" id="savelocation" name="savelocation">
+            <button>Browse</button>
+            <br>
             <br>
             <label for="fontsize">Fontsize: </label><br>
             <input type="radio" id="male" name="fontsize" value="Normal">
@@ -95,15 +94,11 @@
             <label for="small">Small</label><br>
             <input type="radio" id="male" name="fontsize" value="Big">
             <label for="big">Big</label><br>
+            <button id="btn-settings">Cancel</button>
+            <button id="btn-settings">Save</button>
         </form>
         <br><br>
-    </div>
-    <footer>
-        <button id="btn-saveChanges">Save changes </button>
-    </footer>
-
-
-
+    </div> 
 
 </body>
 <footer>
