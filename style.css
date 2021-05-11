@@ -1,8 +1,12 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
   text-align: left;
   font-weight: 800;
   font-size: 28px;
-  border-bottom: solid 3px #DEDEDE;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -10,245 +14,17 @@ header {
   display: block;
 }
 
-
-footer {
-  display: flex;
-  flex-flow: row-reverse;
-  padding: 5px 20px;
-}
-
-.headers {
-  margin-top: 20px;
-  margin-bottom: -10px;
-  font-size: 20px;
-}
-
-#list-head {
-  margin-left: 2.5%;
-  width: 30.5%;
-  display: inline-block;
-  text-align: center;
-}
-
-#note-head {
-  width: 60%;
-  margin-left: 5%;
-  display: inline-block;
-  text-align: center;
-}
-
-noteList {
-  margin-top: 20px;
-  display: inline-block;
-  margin-left: 2.5%;
-  width: 30.5%;
-  height: 400px;
-  overflow: scroll;
-  border: solid 3px #929292;
-  background-color: #DEDEDE;
-}
-
-.within-list {
-  cursor: pointer;
-}
-
-.list-title {
-  font-weight: 600;
-  font-size: 20px;
-  padding: 5px 5px 0 5px;
-}
-
-.list-date {
-  font-weight: 200;
-  font-style: italic;
-  font-size: 12px;
-  padding: 0 5px 0 5px;
-}
-
-.list-text {
-  padding: 0 5px 5px 5px;
-  border-bottom: solid 1px black;
-}
-
-notePad {
-  display: inline-block;
-  border: solid 3px black;
-  height: 400px;
-  overflow: scroll;
-  width: 60%;
-  margin-left: 5%;
-  margin-top: 0;
-}
-
-#note-title {
-  font-size: 24px;
-  padding: 0 0 5px 5px;
-  border-bottom: solid 2px #DEDEDE;
-}
-
-#category-title {
-  font-size: 20px;
-  padding: 0 0 5px 5px;
-  border-bottom: solid 2px #DEDEDE;
-  width: 100%;
-  border: none;
-  outline: none;
-  resize: none;
-  font-weight: 600;
-
-}
-
-#note-body {
-  padding: 5px;
-}
-
-#body-field, #title-field {
-  width: 100%;
-  border: none;
-  outline: none;
-  resize: none;
-}
-
-#title-field {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-#body-field {
-  font-size: 14px;
-  font-weight: 500;
-  height: 400px;
-}
-
-#color-select {
-  display: flex;
-  flex-flow: row-reverse nowrap;
-  padding: 5px 10px 0 0;
-}
-
-.color-box {
-  border: solid 2px #929292;
-  height: 20px;
-  width: 20px;
-  margin-left: 5px;
-}
-
-.display {
-  display: visible;
-}
-
-.no-display {
-  display: none;
-}
-
-button {
-  margin: 5px;
-  border: solid 3px grey;
-  font-size: 22px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #030303;
-}
-
-.headerButton {
-  margin: 5px;
-  border: solid 3px grey;
-  border-radius: 10%;
-  font-size: 22px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #030303;
-}
-
-.footerButton {
-  margin: 5px;
-  border: solid 3px grey;
-  border-radius: 10%;
-  font-size: 30px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #030303;
-}
-
-button:hover, .color-box:hover {
-  cursor: pointer;
-}
-
-#listed:nth-child(odd):hover {
-  cursor: pointer;
-}
-
-#btn-save {
-  background-color: #17721f;
-}
-
-#btn-saveChanges {
-  background-color: #17721f;
-}
-
-#btn-delete {
-  background-color: #f74b3f;
-}
-
-.white {
-  background-color: white;
-}
-
-.orange {
-  background-color: rgb(247, 193, 112);
-}
-
-.yellow {
-  background-color: rgb(248, 240, 167);
-}
-
-.pink {
-  background-color: rgb(247, 147, 213);
-}
-.blue {
-  background-color: rgb(134, 155, 252);
-}
-
-.green {
-  background-color: rgb(134, 241, 139);
-}
-
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-.header {
-  width: 100%;
-  background-color:white;
-  display: block;
-  
-}
-
-.headerLogo{
-  width: 1000px;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
-  background-color: white;
-  float:center;
-} 
-
-.headerLogo h1{
-  color:black;
-  display: table-cell;
-  vertical-align: middle;
-
-}
-
 .headerLeft{
   height: 100%;
   display: table;
   float: left;
+}
 
-
+header h1{
+  color: black;
+  display: table-cell;
+  vertical-align: middle; 
+  padding-left: 250px;
 }
 
 .navbar {
@@ -277,7 +53,7 @@ body {
   font-size: 16px;  
   border: none;
   outline: none;
-  color: black;
+  color:black;
   padding: 6px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -318,7 +94,6 @@ body {
   list-style-type: none;
   padding: 40px;
   margin: 8% 15%;
-  
 }
 
 .note{
@@ -333,3 +108,231 @@ body {
   display: block;
   font-size: 25px;
 } 
+
+.note a{
+  text-decoration: none;
+}
+
+footer {
+  display: inline-block;
+  flex-flow: row-reverse;
+  padding: 20px 20px;
+}
+
+.headers {
+  margin-top: 20px;
+  margin-bottom: -10px;
+  font-size: 20px;
+}
+
+#list-head {
+  margin-left: 1%;
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+}
+
+#note-head {
+  width: 50%;
+  margin-left: 5%;
+  display: inline-block;
+  text-align: center;
+}
+
+#edit-head {
+  width: 5%;
+  margin-left: 5%;
+  display: inline-block;
+  text-align: center;
+}
+
+noteList {
+  margin-top: 20px;
+  display: inline-block;
+  margin-left: 2.5%;
+  width: 30%;
+  height: 400px;
+  overflow: scroll;
+  border: solid 1px black;
+  background-color: #DEDEDE;
+}
+
+.within-list {
+  cursor: pointer;
+}
+
+.list-title {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 5px 5px 0 5px;
+}
+
+.list-date {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 12px;
+  padding: 0 5px 0 5px;
+}
+
+.list-text {
+  padding: 0 5px 5px 5px;
+  border-bottom: solid 1px black;
+}
+
+notePad {
+  display: inline-block;
+  border: solid 1px black;
+  height: 400px;
+  overflow: scroll;
+  width: 50%;
+  margin-left: 2%;
+  margin-top: 0;
+}
+
+#note-title {
+  font-size: 24px;
+  padding: 0 0 5px 5px;
+  border-bottom: solid 2px #DEDEDE;
+}
+
+#note-body {
+  padding: 5px;
+}
+
+#body-field, #title-field {
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+#title-field {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#body-field {
+  font-size: 14px;
+  font-weight: 500;
+  height: 400px;
+}
+
+editNote {
+  display: inline-block;
+  height: 160px;
+  width: 50px;
+  margin-left: 1%;  
+}
+
+#color-select {
+  display: inline-block;
+  flex-flow: row-reverse nowrap;
+  padding: 5px 10px 0 0;
+  position: relative;
+  height: 405px;
+}
+
+.color-box {
+  border: solid 2px #929292;
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+  padding: 10px;
+}
+
+.display {
+  display: visible;
+}
+
+.no-display {
+  display: none;
+}
+
+.saveDelete{
+  padding: 20px;
+  float: right;
+  margin-right: 13.5%;
+
+}
+
+button {
+  margin: 10px;
+  border: solid 1px grey;
+  font-size: 22px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #030303;
+}
+
+.headerButton {
+  margin: 5px;
+  border: solid 2px grey;
+  font-size: 22px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #030303;
+}
+
+.footerButton {
+  border: solid 2px grey;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #030303;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.settings{
+  border: solid 1px grey;
+  background-color: lightgray;
+  display: inline-block;
+  height: 350px;
+  width: 600px;
+  padding: 15px;
+  margin-left: 100px;
+  margin-top: 20px;
+
+
+}
+
+#btn-settings{
+  float: right;
+  margin-left: 10px;
+  width: 80px;
+}
+
+button:hover, .color-box:hover {
+  cursor: pointer;
+}
+
+#listed:nth-child(odd):hover {
+  cursor: pointer;
+}
+
+#btn-save {
+  background-color: lightgreen;
+}
+
+#btn-delete {
+  background-color: lightcoral;
+}
+
+.white {
+  background-color: white;
+}
+.orange {
+  background-color: rgb(247, 193, 112);
+}
+.yellow {
+  background-color: rgb(248, 240, 167);
+}
+.pink {
+  background-color: rgb(247, 147, 213);
+}
+.blue {
+  background-color: rgb(134, 155, 252);
+}
+.green {
+  background-color: rgb(134, 241, 139);
+}
