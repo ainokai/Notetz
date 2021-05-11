@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +12,6 @@
 </head>
 
 <body>
-    
     <header>
         <div class="headerLeft">
             <button class="headerButton">
@@ -31,10 +29,10 @@
             </button>
             <div class="dropdown-content">
                 <a href="addNote.html">New File</a>
-                <a href="#">Open File</a>
-                <a href="#">Save File</a>
-                <a href="#">Save File As...</a>
-                <a href="#">Delete File</a>
+                <a href="#"id="btn-noOpenFunction">Open File</a>
+                <a href="#"id="btn-noSaveFunction">Save File</a>
+                <a href="#"id="btn-noSaveAsFunction">Save File As...</a>
+                <a href="#"id="btn-noDeleteFunction">Delete File</a>
             </div>
         </li>
 
@@ -43,9 +41,9 @@
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">Find</a>
-                <a href="#">Undo</a>
-                <a href="#">Redo</a>
+                <a href="#"id="btn-noFindFunction">Find</a>
+                <a href="#"id="btn-noUndoFunction">Undo</a>
+                <a href="#"id="btn-noRedoFunction">Redo</a>
             </div>
         </li>
 
@@ -54,22 +52,27 @@
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">Guide</a>
-                <a href="#">About Notez</a>
+                <a href="#"id="btn-Guide">Guide</a>
+                <a href="aboutPage.html">About Notez</a>
             </div>
         </li>
-
     </ul>
 
-    <div class="notes">
-        <button class="note">
-            <a href="addNote.html">New note</a></button></li>
+    <div id="indexContainer">
+        <div class="explorer"><b>Explorer</b>
+            <ul class="explore">
+                <li class="explore">No previously saved notes</li>    
+            </ul>
+        </div>
+
+        <div class="notes">
+            <button class="note">
+                <a href="addNote.html">New note</a></button></li>
+        </div>
     </div>
-
-<footer>
-
-</footer>
-
 </body>
+
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+<script type='text/javascript' src='app.js'></script>
 
 </html>
