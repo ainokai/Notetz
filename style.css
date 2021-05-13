@@ -24,7 +24,7 @@ header h1 {
   color: black;
   display: table-cell;
   vertical-align: middle; 
-  padding: 10px 0 10px 350px;
+  padding: 10px 0 10px 390px;
   font-style: helvetica;
   font-size: 22px;
 }
@@ -106,7 +106,7 @@ header h1 {
 }
 
 .note {
-  background-color:white;
+  background-color: lightgrey;
   color: black;
   border: 1px solid black;
   width: 300px;
@@ -161,7 +161,7 @@ footer {
 
 #note-head {
   width: 50%;
-  margin-left: 5%;
+  margin-left: 3%;
   display: inline-block;
   text-align: center;
 }
@@ -181,7 +181,7 @@ noteList {
   height: 400px;
   overflow: scroll;
   border: solid 1px black;
-  background-color: #DEDEDE;
+  background-color: white;
 }
 
 .within-list {
